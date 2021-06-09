@@ -1593,7 +1593,7 @@ pre code {
 }
 
 .table th, .table td {
-    padding: 0.60rem 0.5rem;
+    padding: 0.60rem 0.3rem;
     vertical-align: top;
     border-top: 1px solid #ddd;
 }
@@ -9438,4 +9438,14 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
+}
+
+.remain-progress {
+    background-color: #51adcf;
+    color: white;
+}
+
+.current-progress {
+    background-color: #0d47a1;
+    color: white;
 }

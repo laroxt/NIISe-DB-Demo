@@ -67,7 +67,7 @@ var DatatableBasic = (function () {
     // Scrollable datatable
     var table = $(".datatable-scroll-y").DataTable({
       autoWidth: true,
-      scrollY: 255,
+      scrollY: 320,
     });
 
     // Resize scrollable table when sidebar width changes
