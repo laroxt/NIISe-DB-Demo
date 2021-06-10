@@ -19378,3 +19378,38 @@ a.fc-more:hover {
 	background-color: #FDA50f;
 	color: white;
 }
+
+.priority-lowest {
+	background-color: #36b37e;
+	color: white;
+}
+
+.priority-low {
+	background-color: #00b8d9;
+	color: white;
+}
+
+.priority-medium {
+	background-color: #0065ff;
+	color: white;
+}
+
+.priority-high {
+	background-color: #ffab00;
+	color: white;
+}
+
+.priority-highest {
+	background-color: #ff5630;
+	color: white;
+}
+
+.priority-done {
+	background-color: #36b37e;
+	color: white;
+}
+
+.priority-unresolved {
+	background-color: #ff5630;
+	color: white;
+}
