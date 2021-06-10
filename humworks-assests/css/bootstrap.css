@@ -400,7 +400,7 @@ legend {
     white-space: normal;
 }
 
-progress {
+1ess {
     vertical-align: baseline;
 }
 
@@ -9440,12 +9440,3 @@ input[class*=bg-]:not(.bg-light):not(.bg-white):not(.bg-transparent)+.form-contr
     }
 }
 
-.remain-progress {
-    background-color: #51adcf;
-    color: white;
-}
-
-.current-progress {
-    background-color: #0d47a1;
-    color: white;
-}

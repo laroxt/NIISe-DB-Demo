@@ -19344,6 +19344,37 @@ a.fc-more:hover {
 }
 
 .badge-yellow {
-	color: black;
-	background-color: #fccf14;
+	color: white;
+	background-color: #FDA50f;
+}
+
+.remain-progress {
+	background-color: #e0f7fa;
+}
+
+.current-progress {
+	background-color: #039BE5;
+	color: white;
+}
+
+.bg-custom-green {
+	background-color: #64dd17;
+	color: white;
+}
+
+.bg-custom-red {
+	background-color: #e53935;
+}
+
+.bg-custom-blue {
+	background-color: #039BE5;
+}
+
+.bg-custom-deep-blue {
+	background-color: #01579b;
+}
+
+.bg-custom-yellow {
+	background-color: #FDA50f;
+	color: white;
 }
