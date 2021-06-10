@@ -559,7 +559,7 @@
                                 <div class="col-xl-10">
                                     <div class="card">
                                         <div class="card-header bg-dark text-white header-elements-inline">
-                                            <h6 class="card-title font-weight-semibold">On-Schedule Project List</h6>
+                                            <h6 class="card-title font-weight-semibold">On-Schedule Contract List</h6>
                                             <div class="header-elements">
                                                 <div class="list-icons">
                                                     <div class="dropdown">
@@ -579,8 +579,8 @@
                                                 <div class="breadcrumb">
                                                     <a href="./overview.html" class="breadcrumb-item">Overview
                                                         (On-Schedule)</a>
-                                                    <a href="./overivew-project-list.html" class="breadcrumb-item">On
-                                                        Schedule Project List</a>
+                                                    <a href="./overivew-contract-list.html" class="breadcrumb-item">On
+                                                        Schedule Contract List</a>
                                                 </div>
 
                                                 <a href="#" class="header-elements-toggle text-default d-md-none"><i
@@ -594,13 +594,17 @@
                                             <thead>
                                                 <tr>
 
-                                                    <th class="bg-dark pl-3">Project ID</th>
-                                                    <th class="bg-dark">Project Name</th>
-                                                    <th class="bg-dark">Project Category</th>
+                                                    <th class="bg-dark pl-3">Contract ID</th>
+                                                    <th class="bg-dark">Contract Name</th>
+                                                    <th class="bg-dark">Contract Category</th>
+                                                    <th class="bg-dark">Contract Type</th>
+
+                                                    <th class="bg-dark">Contract Details</th>
+
 
                                                     <th class="bg-dark">Status</th>
-                                                    <th class="bg-dark">Project Value(RM)</th>
-                                                    <!-- <th class="bg-dark">% Completion</th> -->
+                                                    <th class="bg-dark">Contract Value(RM)</th>
+
                                                     <th class="bg-dark">Start Date</th>
                                                     <th class="bg-dark">End Date</th>
 
@@ -610,13 +614,15 @@
                                             <tbody>
                                                 <tr>
 
-                                                    <td class="pl-3">PRJ-001</td>
-                                                    <td><a href="./overview-project-details.html">Application</a></td>
-                                                    <td>Application</td>
+                                                    <td class="pl-3">CON-001</td>
+                                                    <td><a href="./overview-contract-details.html">Application</a></td>
 
+                                                    <td>Application</td>
+                                                    <td>Main</td>
+                                                    <td>In chartge of application</td>
                                                     <td><span class="badge badge-yellow">On-Schedule</span></td>
-                                                    <td>3,300,000</td>
-                                                    <!-- <td>89</td> -->
+                                                    <td>1,200,000</td>
+
                                                     <td>30/03/2021</td>
                                                     <td>04/04/2021</td>
 
@@ -626,13 +632,15 @@
                                                 </tr>
 
                                                 <tr>
-                                                    <td class="pl-3">PRJ-002</td>
+                                                    <td class="pl-3">CON-002</td>
                                                     <td><a href="#">Infrastructure</a></td>
                                                     <td>Infrastructure</td>
 
+                                                    <td>Supplementary</td>
+                                                    <td>In chartge of infrastructure</td>
                                                     <td><span class="badge badge-yellow">On-Schedule</span></td>
                                                     <td>1,100,000</td>
-                                                    <!-- <td>85</td> -->
+
                                                     <td>06/03/2021</td>
                                                     <td>16/04/2021</td>
 
@@ -641,13 +649,15 @@
                                                 </tr>
                                                 <tr>
 
-                                                    <td class="pl-3">PRJ-003</td>
+                                                    <td class="pl-3">CON-003</td>
                                                     <td><a href="#">Project Management</a></td>
                                                     <td>Project Management</td>
+                                                    <td>Addendum</td>
 
+                                                    <td>In chartge of project management</td>
                                                     <td><span class="badge badge-yellow">On-Schedule</span></td>
                                                     <td>1,000,000</td>
-                                                    <!-- <td>85</td> -->
+
                                                     <td>01/03/2021</td>
                                                     <td>20/04/2021</td>
 
@@ -655,82 +665,6 @@
 
                                                 </tr>
 
-                                                <!-- <tr>
-
-                                                    <td class="pl-3">PRJ-004</td>
-                                                    <td>IV&V</td>
-                                                    <td>Software Testing</td>
-
-                                                    <td><span class="badge badge-success">On Schedule</span></td>
-                                                    <td>1,000,000</td>
-                                                    <td>85</td>
-                                                    <td>01/03/2021</td>
-                                                    <td>20/04/2021</td>
-
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="pl-3">PRJ-005</td>
-                                                    <td>Business</td>
-                                                    <td>Serives</td>
-
-                                                    <td><span class="badge badge-success">On Schedule</span></td>
-                                                    <td>1,000,000</td>
-                                                    <td>85</td>
-                                                    <td>01/03/2021</td>
-                                                    <td>20/04/2021</td>
-
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="pl-3">PRJ-006</td>
-                                                    <td>Application</td>
-                                                    <td>Serives</td>
-
-                                                    <td><span class="badge badge-success">On Schedule</span></td>
-                                                    <td>1,000,000</td>
-                                                    <td>85</td>
-                                                    <td>01/03/2021</td>
-                                                    <td>20/04/2021</td>
-
-
-
-                                                </tr>
-
-                                                <tr>
-
-                                                    <td class="pl-3">PRJ-007</td>
-                                                    <td>Management</td>
-                                                    <td>Serives</td>
-
-                                                    <td><span class="badge badge-success">On Schedule</span></td>
-                                                    <td>1,000,000</td>
-                                                    <td>85</td>
-                                                    <td>01/03/2021</td>
-                                                    <td>20/04/2021</td>
-
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td class="pl-3">PRJ-008</td>
-                                                    <td>Technical</td>
-                                                    <td>Serives</td>
-
-                                                    <td><span class="badge badge-success">On Schedule</span></td>
-                                                    <td>1,000,000</td>
-                                                    <td>85</td>
-                                                    <td>01/03/2021</td>
-                                                    <td>20/04/2021</td>
-
-
-
-                                                </tr> -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -746,12 +680,12 @@
 
                                                 <div class="btn-group justify-content-center mr-3 mb-3">
                                                     <a href="#" class="btn bg-custom-deep-blue dropdown-toggle"
-                                                        data-toggle="dropdown">Project List</a>
+                                                        data-toggle="dropdown">Contract List</a>
                                                     <div class="dropdown-menu">
-                                                        <a href="./overivew-project-list.html"
-                                                            class="dropdown-item active" active>Project List</a>
+                                                        <a href="./overivew-project-list.html" class="dropdown-item "
+                                                            active>Project List</a>
                                                         <a href="./overivew-contract-list.html"
-                                                            class="dropdown-item ">Contract List</a>
+                                                            class="dropdown-item active">Contract List</a>
                                                     </div>
                                                 </div>
 
@@ -759,7 +693,7 @@
 
                                                 <div style="overflow: auto; height: 388px;">
                                                     <div class="mt-3">
-                                                        <h5 class="font-weight-bold">Filter Project</h5>
+                                                        <h5 class="font-weight-bold">Filter Contract</h5>
                                                         <hr>
                                                         <div class="form-group">
                                                             <div class="form-check form-check-inline d-block ">
@@ -777,7 +711,7 @@
                                                                 <label class="form-check-label">
                                                                     <input type="checkbox" class="form-check-input"
                                                                         checked>
-                                                                    Project ID
+                                                                    Contract ID
                                                                 </label>
                                                             </div>
 
@@ -785,14 +719,31 @@
                                                                 <label class="form-check-label">
                                                                     <input type="checkbox" class="form-check-input"
                                                                         checked>
-                                                                    Project Name
+                                                                    Contract Name
                                                                 </label>
                                                             </div>
+
                                                             <div class="form-check form-check-inline d-block">
                                                                 <label class="form-check-label">
                                                                     <input type="checkbox" class="form-check-input"
                                                                         checked>
-                                                                    Project Category
+                                                                    Contract Category
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="form-check form-check-inline d-block">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input"
+                                                                        checked>
+                                                                    Contract Type
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="form-check form-check-inline d-block">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input"
+                                                                        checked>
+                                                                    Contract Details
                                                                 </label>
                                                             </div>
 
@@ -807,7 +758,7 @@
                                                                 <label class="form-check-label">
                                                                     <input type="checkbox" class="form-check-input"
                                                                         checked>
-                                                                    Project Value(RM)
+                                                                    Contract Value(RM)
                                                                 </label>
                                                             </div>
                                                             <div class="form-check form-check-inline d-block">
@@ -828,6 +779,18 @@
                                                                     <input type="checkbox" class="form-check-input"
                                                                         checked>
                                                                     End Date
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline d-block">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input">
+                                                                    Penalty Type
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline d-block">
+                                                                <label class="form-check-label">
+                                                                    <input type="checkbox" class="form-check-input">
+                                                                    Penalty Reason
                                                                 </label>
                                                             </div>
 

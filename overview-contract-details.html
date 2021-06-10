@@ -530,7 +530,8 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header bg-dark text-white header-elements-inline">
-                                        <h6 class="card-title font-weight-semibold">Application Details</h6>
+                                        <h6 class="card-title font-weight-semibold">Application Details - Hummingsoft
+                                            Sdn Bhd</h6>
 
 
                                         <div class="header-elements">
@@ -563,13 +564,12 @@
                                             <div class="breadcrumb">
                                                 <a href="./overview.html" class="breadcrumb-item">Overview (In
                                                     Progess)</a>
-                                                <a href="./overivew-project-list.html"
+                                                <a href="./overivew-contract-list.html"
                                                     class="breadcrumb-item">On-Schedule
-                                                    Project List</a>
+                                                    Contract List</a>
 
-                                                <a href="./overview-project-details-ivnv.html"
-                                                    class="breadcrumb-item ">Application Details (Jira
-                                                    Dashboard-IV&V)</a>
+                                                <a href="./overview-contract-details.html"
+                                                    class="breadcrumb-item ">Application Detail</a>
                                             </div>
 
                                             <a href="#" class="header-elements-toggle text-default d-md-none"><i
@@ -581,38 +581,262 @@
 
 
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <h6 class="font-weight-bold">Dashboard View:</h6>
 
-                                        </div>
-
-                                        <div class="btn-group justify-content-center mr-3 mb-3">
-                                            <a href="#" class="btn bg-dark dropdown-toggle" data-toggle="dropdown">Jira
-                                                Dashboard-IV&V</a>
-                                            <div class="dropdown-menu">
-                                                <a href="./overview-project-details.html" class="dropdown-item "
-                                                    active>General Dashboard</a>
-                                                <a href="./overview-project-details-ivnv.html"
-                                                    class="dropdown-item active">Jira Dashboard-IV&V</a>
-                                            </div>
-                                        </div>
 
                                         <div class="row">
 
                                             <div class="col-xl-12">
+                                                <div class="table-responsive mb-4">
+                                                    <table class="table table-bordered font-weight-semibold">
+
+                                                        <tbody class="font-size-lg">
+
+                                                            <tr class="table-border-top text-center">
+                                                                <td rowspan="3"> <img
+                                                                        src="./global_assets/images/niise-logo/niise-logo.png"
+                                                                        width="185" height="185"
+                                                                        class="border-2 border-grey-300"
+                                                                        style="border-radius: 150px;"></td>
+                                                                <td class="bg-blue-600">Contract Status</td>
+                                                                <td><span class="badge bg-custom-green">On
+                                                                        Schedule</span>
+                                                                </td>
+                                                                <td class="bg-blue-600">Contract Catergory
+                                                                </td>
+                                                                <td>
+                                                                    <span">Application</span>
+                                                                </td>
+                                                            </tr>
+
+
+                                                            <tr class="table-border-top text-center">
+                                                                <td class="bg-blue-600">Contract Name
+                                                                </td>
+                                                                <td>
+                                                                    <span">Application</span>
+                                                                </td>
+                                                                <td class="bg-blue-600">Contract Value</td>
+                                                                <td>
+                                                                    <span">RM1,200,000</span>
+                                                                </td>
+                                                            </tr>
+
+
+
+                                                            <tr class="table-border-top text-center">
+                                                                <td class="bg-blue-600">Contract Start</td>
+                                                                <td>01/03/2021</td>
+                                                                <td class="bg-blue-600">Contract End</td>
+                                                                <td>20/04/2021</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-3">
                                                 <div class="card">
                                                     <div class="card-header bg-dark text-white header-elements-inline">
-                                                        <h6 class="card-title font-weight-semibold">Created Vs Resolved
+                                                        <h6 class="card-title font-weight-semibold">Contract Cost &
+                                                            Payment Cost (NIISe Project)
+                                                        </h6>
 
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="highcharts-figure">
+                                                            <div id="cp-project"></div>
+                                                        </div>
+                                                        <div class="table-responsive">
+
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="table table-bordered font-weight-semibold font-size-lg">
+                                                                    <thead class="text-center">
+                                                                        <th class="current-progress"
+                                                                            style="width: 50%;">Payment Cost</th>
+                                                                        <th class="remain-progress" style="width: 50%;">
+                                                                            Contract Cost</th>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="table-border-top text-center">
+                                                                            <td>RM500K</td>
+                                                                            <td>RM1.2M</td>
+
+                                                                        </tr>
+                                                                    </tbody>
+
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-3">
+                                                <div class="card">
+                                                    <div class="card-header bg-dark text-white header-elements-inline">
+                                                        <h6 class="card-title font-weight-semibold">Contract Cost &
+                                                            Payment Cost (Contract Stage)
+                                                        </h6>
+
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="highcharts-figure">
+                                                            <div id="project-change-request"></div>
+                                                        </div>
+                                                        <div class="table-responsive">
+
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="table table-bordered font-weight-semibold font-size-lg">
+                                                                    <thead class="text-center">
+                                                                        <th class="current-progress"
+                                                                            style="width: 50%;">Payment Cost</th>
+                                                                        <th class="remain-progress" style="width: 50%;">
+                                                                            Contract Cost</th>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="table-border-top text-center">
+                                                                            <td>93%</td>
+                                                                            <td>7%</td>
+
+                                                                        </tr>
+                                                                    </tbody>
+
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-3">
+                                                <div class="card">
+                                                    <div class="card-header bg-dark text-white header-elements-inline">
+                                                        <h6 class="card-title font-weight-semibold">Penalty
+                                                        </h6>
+
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class="highcharts-figure">
+                                                            <div id="project-change-request"></div>
+                                                        </div>
+                                                        <div class="table-responsive ">
+
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="table table-bordered font-weight-semibold font-size-lg">
+                                                                    <thead class="text-center">
+                                                                        <th class="current-progress"
+                                                                            style="width: 50%;">Current
+                                                                            Progress</th>
+                                                                        <th class="remain-progress" style="width: 50%;">
+                                                                            Remaining Progress</th>
+
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="table-border-top text-center">
+                                                                            <td>93%</td>
+                                                                            <td>7%</td>
+
+                                                                        </tr>
+                                                                    </tbody>
+
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-3">
+                                                <div class="card">
+                                                    <div class="card-header bg-dark text-white header-elements-inline">
+                                                        <h6 class="card-title font-weight-semibold">Contract Progress
+                                                        </h6>
+
+                                                    </div>
+
+                                                    <div class="card-body">
+                                                        <div class=" highcharts-figure">
+                                                            <div id="project-progress-donut"></div>
+                                                        </div>
+                                                        <div class="col-xl-12">
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="table table-bordered font-weight-semibold">
+                                                                    <tbody>
+                                                                        <tr class="text-center font-size-xs">
+
+
+                                                                            <td style="background-color: #039BE5
+                                                                        ; width: 20%; color:white;">
+                                                                                Milestones Progress
+                                                                            </td>
+                                                                            <td
+                                                                                style="background-color: #e0f7fa; width: 20%;">
+                                                                                Remaining Milestones Progress
+                                                                            </td>
+                                                                            <td style="background-color: #01579b
+                                                                            ; width: 20%; color: white;">
+                                                                                Current Progress
+                                                                            </td>
+                                                                            <td
+                                                                                style="background-color: #e0f7fa; width: 20%;">
+                                                                                Remaining Progress
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="text-center font-size-sm">
+                                                                            <td>70%</td>
+                                                                            <td>30%</td>
+                                                                            <td>89%</td>
+                                                                            <td>11%</td>
+
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+                                            <div class="col-xl-6">
+                                                <div class="card">
+                                                    <div class="card-header bg-dark text-white header-elements-inline">
+                                                        <h6 class="card-title font-weight-semibold">Contract Cost &
+                                                            Payment Cost (Contract Stage)
                                                         </h6>
 
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="highcharts-figure">
-                                                            <div id="created-resolved-scurve"></div>
+                                                            <div id="ev-scurve"></div>
                                                         </div>
 
-                                                        <!-- <div class="col-xl-12">
+                                                        <div class="col-xl-12">
 
                                                             <div class="table-responsive">
                                                                 <table
@@ -628,9 +852,9 @@
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr class="table-border-top text-center">
-                                                                            <td>RM39.1</td>
-                                                                            <td>RM31.95</td>
-                                                                            <td>RM31.11</td>
+                                                                            <td>RM39.1M</td>
+                                                                            <td>RM31.95M</td>
+                                                                            <td>RM31.11M</td>
                                                                             <td>1.63</td>
                                                                             <td>-16.12%</td>
                                                                             <td>-7.21%</td>
@@ -642,288 +866,342 @@
                                                             </div>
 
 
-                                                        </div> -->
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4">
-                                                <div class="card" style="height: 37rem;">
-                                                    <div class="card-header bg-dark text-white header-elements-inline">
-                                                        <h6 class="card-title font-weight-semibold">Issue Progress
-                                                            Overview
-                                                        </h6>
-                                                    </div>
 
+                                            <div class="col-xl-6">
+                                                <div class="card">
+                                                    <div class="card-header bg-dark text-white header-elements-inline">
+                                                        <h6 class="card-title font-weight-semibold">Contract Progress
+                                                            S-Curve
+                                                        </h6>
+
+                                                    </div>
                                                     <div class="card-body">
                                                         <div class="highcharts-figure">
-                                                            <div id="issue-progress-overview"></div>
+                                                            <div id="project-progress-scurve"></div>
                                                         </div>
-                                                        <div class="table-responsive mt-2">
-                                                            <table class="table table-bordered font-weight-semibold">
-                                                                <tbody>
-                                                                    <tr class="text-center font-size-xs">
+
+                                                        <div class="col-xl-12">
+
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="table table-bordered font-weight-semibold font-size-lg">
+                                                                    <thead class="text-center">
+                                                                        <th class="bg-custom-blue">Early</th>
+                                                                        <th class="bg-custom-red">Late</th>
+                                                                        <th class="bg-custom-green">Actual</th>
+                                                                        <th class="bg-custom-deep-blue">Growth Rate
+                                                                        </th>
+                                                                        <th class="bg-custom-deep-blue">Var Early</th>
+                                                                        <th class="bg-custom-deep-blue">Var Late</th>
+                                                                        <th class="bg-custom-deep-blue">Trend</th>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="table-border-top text-center">
+                                                                            <td>39.3%</td>
+                                                                            <td>31.95%</td>
+                                                                            <td>31.11%</td>
+                                                                            <td>1.63</td>
+                                                                            <td>-16.12%</td>
+                                                                            <td>-7.21%</td>
+                                                                            <td><i class="icon-arrow-down12 text-danger"
+                                                                                    style="font-size: 1.5rem;"></i></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
 
 
-                                                                        <td style="background-color: #039BE5
-                                                                    ; width: 20%; color:white;">
-                                                                            Current Issue Progress
-                                                                        </td>
-                                                                        <td
-                                                                            style="background-color: #e0f7fa; width: 20%; ">
-                                                                            Remaining Issue Progress
-                                                                        </td>
-
-
-
-                                                                    </tr>
-                                                                    <tr class="text-center font-size-sm">
-                                                                        <td>70%</td>
-                                                                        <td>30%</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <div class="card" style="height: 37rem;">
-                                                    <div class="card-header bg-dark text-white header-elements-inline">
-                                                        <h6 class="card-title font-weight-semibold">Issue By Priority
-                                                        </h6>
-                                                    </div>
-
-                                                    <div class="card-body">
-                                                        <div class="highcharts-figure">
-                                                            <div id="issue-priority"></div>
-                                                        </div>
-                                                        <div class="table-responsive mt-2">
-                                                            <table class="table table-bordered font-weight-semibold">
-                                                                <tbody>
-                                                                    <tr class="text-center font-size-xs">
-
-
-                                                                        <td style="background-color: #00b8d9
-                                                                        ; color:white; width: 10%;">
-                                                                            Low
-                                                                        </td>
-                                                                        <td style="width: 10%;">40</td>
-                                                                        <td style="background-color: #0065ff; width: 10%; color:white;"
-                                                                            rowspan="2">
-                                                                            Medium
-                                                                        </td>
-                                                                        <td style="width: 10%;" rowspan="2">30</td>
-                                                                        <td
-                                                                            style="background-color: #ffab00; color:white; width: 10%;">
-                                                                            High</td>
-                                                                        <td style="width: 10%;">36
-                                                                        </td>
-
-
-                                                                    </tr>
-                                                                    <tr class="text-center font-size-sm">
-
-
-
-                                                                        <td
-                                                                            style="background-color: #36b37e; color:white; width: 10%;">
-                                                                            Lowest</td>
-                                                                        <td style="width: 10%;">20
-                                                                        </td>
-
-                                                                        <td style="background-color: #ff5630
-                                                                        ; color:white; width: 10%;">
-                                                                            Highest
-                                                                        </td>
-                                                                        <td style="width: 10%;">20</td>
-
-
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-4">
-                                                <div class="card" style="height: 37rem;">
-                                                    <div class="card-header bg-dark text-white header-elements-inline">
-                                                        <h6 class="card-title font-weight-semibold">Issue By Resolution
-                                                        </h6>
-                                                    </div>
-
-                                                    <div class="card-body">
-                                                        <div class="highcharts-figure">
-                                                            <div id="issue-resolution"></div>
-                                                        </div>
-                                                        <div class="table-responsive mt-2">
-                                                            <table class="table table-bordered font-weight-semibold">
-                                                                <tbody>
-                                                                    <tr class="text-center font-size-xs">
 
 
-                                                                        <td style="background-color: #ff5630
-                                                                    ; width: 20%; color:white;">
-                                                                            Unsolved
-                                                                        </td>
-                                                                        <td
-                                                                            style="background-color: #36b37e; width: 20%; color:white;">
-                                                                            Done
-                                                                        </td>
-
-
-
-                                                                    </tr>
-                                                                    <tr class="text-center font-size-sm">
-                                                                        <td>31</td>
-                                                                        <td>139</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
 
                                             <div class="col-xl-12">
-                                                <div class="card" style="height: 35rem;">
+                                                <div class="card">
                                                     <div class="card-header bg-dark text-white header-elements-inline">
-                                                        <h6 class="card-title font-weight-semibold">Resolution List
+                                                        <h6 class="card-title font-weight-semibold">Contract Milestones
                                                         </h6>
 
+
                                                     </div>
-                                                    <table class=" table datatable-scroll-y font-size-sm" width="100%">
-                                                        <thead>
-                                                            <tr>
 
-                                                                <th class="bg-dark pl-3">Issue ID</th>
-                                                                <th class="bg-dark">Issue</th>
-                                                                <th class="bg-dark">Assignee</th>
-                                                                <th class="bg-dark">Priority Status</th>
-                                                                <th class="bg-dark">Resolution Status</th>
-                                                                <th class="bg-dark">Issue Date</th>
-                                                                <th class="bg-dark">Resolved Date</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-01</td>
-                                                                <td>Issue 1</td>
-                                                                <td>Ismail Khamir</td>
-                                                                <td><span class="badge priority-lowest">Lowest</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-02</td>
-                                                                <td>Issue 2</td>
-                                                                <td>John Wong</td>
-                                                                <td><span class="badge priority-low">Low</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-03</td>
-                                                                <td>Issue 3</td>
-                                                                <td>Susan Jamila</td>
-                                                                <td><span class="badge priority-high">High</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="badge priority-unresolved">Unsolved</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-04</td>
-                                                                <td>Issue 4</td>
-                                                                <td>Ismail Khamir</td>
+                                                    <div class="card-header bg-white header-elements-inline">
+                                                        <div class="card-title">
+                                                            <div class="square d-inline-block align-middle mb-1 font-size-sm"
+                                                                style="background-color: #555;">
+                                                            </div>
+                                                            <span
+                                                                class="font-weight-semibold mr-2 font-size-sm">Milestones</span>
 
-                                                                <td><span class="badge priority-medium">Medium</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-05</td>
-                                                                <td>Issue 5</td>
-                                                                <td>Khalid Azzan</td>
-                                                                <td><span class="badge priority-medium">Medium</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="badge priority-unresolved">Unsolved</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-06</td>
-                                                                <td>Issue 6</td>
-                                                                <td>Michael David</td>
-                                                                <td><span class="badge priority-high">High</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-07</td>
-                                                                <td>Issue 7</td>
-                                                                <td>David Ho</td>
-                                                                <td><span class="badge priority-highest">Highest</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-08</td>
-                                                                <td>Issue 8</td>
-                                                                <td>Lim Kong Wing</td>
-                                                                <td><span class="badge priority-highest">Highest</span>
-                                                                </td>
-                                                                <td><span class="badge priority-done">Done</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="pl-3">BUG-APK-010</td>
-                                                                <td>Issue 9</td>
-                                                                <td>Jared James</td>
-                                                                <td><span class="badge priority-lowest">Lowest</span>
-                                                                </td>
-                                                                <td><span
-                                                                        class="badge priority-unresolved">Unsolved</span>
-                                                                </td>
-                                                                <td>01/01/2021</td>
-                                                                <td>01/02/2021</td>
-                                                            </tr>
+                                                            <div class="square  d-inline-block align-middle mb-1 font-size-sm"
+                                                                style="background-color: #888;">
+                                                            </div>
+                                                            <span
+                                                                class="font-weight-semibold mr-2 font-size-sm">Sub-Milestones</span>
 
-                                                        </tbody>
-                                                    </table>
+                                                            <div class="square  d-inline-block align-middle mb-1 font-size-sm"
+                                                                style="background-color: #1167b1;">
+                                                            </div>
+                                                            <span class="font-weight-semibold mr-2 font-size-sm">Current
+                                                                Progress
+                                                            </span>
+
+                                                            <div class="square  d-inline-block align-middle mb-1 font-size-sm"
+                                                                style="background-color: #e53935;">
+                                                            </div>
+                                                            <span
+                                                                class="font-weight-semibold font-size-sm mr-2">Critical
+                                                                Path</span>
+                                                        </div>
+                                                        <div class="header-elements">
+                                                            <div class="btn-group">
+                                                                <!-- <button type="button"
+                                                                    class="btn bg-danger-400 dropdown-toggle"
+                                                                    data-toggle="dropdown">Issue By Task</button> -->
+                                                                <div class="dropdown-menu dropdown-menu-right">
+                                                                    <span class="text-muted dropdown-item">Project
+                                                                        Planning
+                                                                        1</span>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#formRole">Task
+                                                                        1</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 2</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 3</a>
+                                                                    <span class="text-muted dropdown-item">Project
+                                                                        Planning
+                                                                        1.1</span>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 1</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 2</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 3</a>
+                                                                    <span class="text-muted dropdown-item">Project
+                                                                        Planning
+                                                                        2</span>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 1</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 2</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 3</a>
+                                                                    <a href="#" class="dropdown-item"
+                                                                        data-toggle="modal" data-target="#">Task 4</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card-body milestones-scroll">
+                                                        <div class="highcharts-figure">
+                                                            <div id="project-10-milestones"></div>
+                                                        </div>
+                                                    </div>
+
                                                     <style>
-                                                        .badge-orange {
-                                                            background-color: #ff9100;
-                                                            color: white;
+                                                        .milestones-scroll {
+                                                            height: 381px;
+                                                            overflow: auto;
                                                         }
                                                     </style>
 
+                                                    <!-- Full width modal/ Sub-Contractor-->
+                                                    <div id="formRole" class="modal fade" tabindex="-1">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8 offset-md-2">
+                                                                            <div class="card">
+                                                                                <div
+                                                                                    class="card-header bg-white header-elements-inline">
+                                                                                    <h4
+                                                                                        class="card-title font-weight-bold">
+                                                                                        Task
+                                                                                        1
+                                                                                        Issues</h4>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <div
+                                                                                        class="card-group-control card-group-control-right">
+                                                                                        <div class="card">
+                                                                                            <div
+                                                                                                class="card-header bg-danger">
+                                                                                                <h6 class="card-title">
+                                                                                                    <a data-toggle="collapse"
+                                                                                                        class="text-white"
+                                                                                                        href="#collapsible-control-right-group1"><i
+                                                                                                            class="icon-warning mr-2"></i>Issue
+                                                                                                        Item #1</a>
+                                                                                                </h6>
+                                                                                            </div>
+
+                                                                                            <div id="collapsible-control-right-group1"
+                                                                                                class="collapse show">
+                                                                                                <div class="card-body">
+                                                                                                    Lorem ipsum dolor
+                                                                                                    sit amet,
+                                                                                                    consectetur
+                                                                                                    adipiscing elit,
+                                                                                                    sed do eiusmod
+                                                                                                    tempor
+                                                                                                    incididunt ut labore
+                                                                                                    et
+                                                                                                    dolore
+                                                                                                    magna aliqua. Ut
+                                                                                                    enim ad
+                                                                                                    minim veniam, quis
+                                                                                                    nostrud
+                                                                                                    exercitation ullamco
+                                                                                                    laboris
+                                                                                                    nisi ut aliquip ex
+                                                                                                    ea
+                                                                                                    commodo consequat.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="card-footer d-flex justify-content-between">
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase font-weight-semibold">May
+                                                                                                    12, 11:25 am</span>
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase text-danger font-weight-semibold">Due
+                                                                                                    in 10 days</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="card-body">
+                                                                                    <div
+                                                                                        class="card-group-control card-group-control-right">
+                                                                                        <div class="card">
+                                                                                            <div
+                                                                                                class="card-header bg-danger">
+                                                                                                <h6 class="card-title">
+                                                                                                    <a data-toggle="collapse"
+                                                                                                        class="text-white"
+                                                                                                        href="#collapsible-control-right-group1"><i
+                                                                                                            class="icon-warning mr-2"></i>Issue
+                                                                                                        Item #2</a>
+                                                                                                </h6>
+                                                                                            </div>
+
+                                                                                            <div id="collapsible-control-right-group1"
+                                                                                                class="collapse show">
+                                                                                                <div class="card-body">
+                                                                                                    Lorem ipsum dolor
+                                                                                                    sit amet,
+                                                                                                    consectetur
+                                                                                                    adipiscing elit,
+                                                                                                    sed do eiusmod
+                                                                                                    tempor
+                                                                                                    incididunt ut labore
+                                                                                                    et
+                                                                                                    dolore
+                                                                                                    magna aliqua. Ut
+                                                                                                    enim ad
+                                                                                                    minim veniam, quis
+                                                                                                    nostrud
+                                                                                                    exercitation ullamco
+                                                                                                    laboris
+                                                                                                    nisi ut aliquip ex
+                                                                                                    ea
+                                                                                                    commodo consequat.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="card-footer d-flex justify-content-between">
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase font-weight-semibold">June
+                                                                                                    15 11:25 am</span>
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase text-danger font-weight-semibold">Due
+                                                                                                    in 12 days</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+
+                                                                                <div class="card-body">
+                                                                                    <div
+                                                                                        class="card-group-control card-group-control-right">
+                                                                                        <div class="card">
+                                                                                            <div
+                                                                                                class="card-header bg-danger">
+                                                                                                <h6 class="card-title">
+                                                                                                    <a data-toggle="collapse"
+                                                                                                        class="text-white"
+                                                                                                        href="#collapsible-control-right-group1"><i
+                                                                                                            class="icon-warning mr-2"></i>Issue
+                                                                                                        Item #3</a>
+                                                                                                </h6>
+                                                                                            </div>
+
+                                                                                            <div id="collapsible-control-right-group1"
+                                                                                                class="collapse show">
+                                                                                                <div class="card-body">
+                                                                                                    Lorem ipsum dolor
+                                                                                                    sit amet,
+                                                                                                    consectetur
+                                                                                                    adipiscing elit,
+                                                                                                    sed do eiusmod
+                                                                                                    tempor
+                                                                                                    incididunt ut labore
+                                                                                                    et
+                                                                                                    dolore
+                                                                                                    magna aliqua. Ut
+                                                                                                    enim ad
+                                                                                                    minim veniam, quis
+                                                                                                    nostrud
+                                                                                                    exercitation ullamco
+                                                                                                    laboris
+                                                                                                    nisi ut aliquip ex
+                                                                                                    ea
+                                                                                                    commodo consequat.
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="card-footer d-flex justify-content-between">
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase font-weight-semibold">May
+                                                                                                    12, 11:25 am</span>
+                                                                                                <span
+                                                                                                    class="font-size-sm text-uppercase text-danger font-weight-semibold">Due
+                                                                                                    in 12 days</span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /full width modal -->
                                                 </div>
                                             </div>
 
+
                                         </div>
+
+
+
+
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1000,17 +1278,257 @@
 <script src="./Highchart/code/modules/data.js"></script>
 <script src="./Highchart/code/modules/drilldown.js"></script>
 
-
-
-<!-- Issue Progress Overview -->
+<!-- Progress Donut -->
 <script type="text/javascript">
-    Highcharts.chart('issue-progress-overview', {
+    Highcharts.chart('project-progress-donut', {
         chart: {
             plotShadow: false,
             type: 'pie',
         },
         title: {
-            text: '<b style="font-size:16px; color: #333333;">Current Issue Progression<br><span style="font-size:20px;">70%</span></b>',
+            text: '<b style="font-size:16px;">Project Progress<br><span style="font-size:20px;">80%</span></b>',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 25,
+
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false,
+                    distance: -30,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                },
+                states: {
+                    hover: {
+                        halo: {
+                            size: 0
+                        }
+                    }
+                },
+                startAngle: -360,
+                endAngle: 360,
+
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Project Progress',
+            innerSize: '80%',
+            color: 'blue',
+            x: 0,
+            size: '85%',
+            data: [
+                {
+                    name: 'Milestones Progress',
+                    y: 89,
+                    color: " #039BE5",
+
+
+                }, {
+                    name: 'Remaining Progress',
+                    y: 11,
+                    color: "#e0f7fa",
+
+                }]
+        },
+        {
+            showInLegend: false,
+            name: 'Project Progress',
+            innerSize: '85%',
+            x: 1,
+            size: '100%',
+            data: [{
+                name: 'Current  Progress',
+                y: 80,
+                color: " #01579b",
+
+            },
+            {
+                name: 'Remaining Milestones Progress',
+                y: 20,
+                color: " #e0f7fa ",
+
+            }]
+        }]
+    });
+</script>
+<!-- /Progress Donut -->
+
+<!-- Change Request -->
+<script>
+    // Create the chart
+    Highcharts.chart('cp-project', {
+        chart: {
+            plotShadow: false,
+            type: 'pie',
+        },
+        title: {
+            text: '<b style="font-size:16px;">Project Progress<br><span style="font-size:20px;">42%</span></b>',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 25,
+
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>RM{point.y}</b>'
+        },
+        // accessibility: {
+        //     point: {
+        //         valueSuffix: '%'
+        //     }
+        // },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false,
+                    distance: -30,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                },
+                states: {
+                    hover: {
+                        halo: {
+                            size: 0
+                        }
+                    }
+                },
+                startAngle: -360,
+                endAngle: 360,
+
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Received Cost',
+            innerSize: '80%',
+            color: 'blue',
+            x: 0,
+            size: '85%',
+            data: [
+                {
+                    name: 'Payment Cost',
+                    y: 500000,
+                    color: " #039BE5",
+
+                }, {
+                    name: 'Contract Cost',
+                    y: 1200000,
+                    color: " #e0f4fa ",
+
+                }]
+        },
+        ]
+    });
+
+</script>
+<!-- /Change Request -->
+
+<!-- Risk High Medium Low-->
+<script>
+    // Create the chart
+    Highcharts.chart('project-risk-high-low', {
+        chart: {
+            type: 'column'
+        },
+
+        title: {
+            text: ''
+        },
+
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Risk'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
+        },
+        credits: {
+            enabled: false
+        },
+        series: [
+            {
+                name: "Risk Type",
+                colorByPoint: true,
+                data: [
+                    {
+                        name: "Minor",
+                        y: 1,
+                        color: "#64dd17",
+
+                    },
+                    {
+                        name: "Moderate",
+                        y: 2,
+                        color: "#fccf14",
+
+                    },
+                    {
+                        name: "Major",
+                        y: 2,
+                        color: "#FDA50f",
+
+                    },
+                    {
+                        name: "Critical",
+                        y: 1,
+                        color: "#f44336",
+
+                    },
+
+                ]
+            }
+        ],
+    });
+</script>
+<!-- /Risk High Medium Low -->
+
+<!-- Contract Value & Claim Donut -->
+<script type="text/javascript">
+    Highcharts.chart('project-contract-vs-claim-donut', {
+        chart: {
+            plotShadow: false,
+            type: 'pie',
+        },
+        title: {
+            text: '<b style="font-size:16px; color: #333333;">Claim Value<br><span style="font-size:20px;">70%</span></b>',
             align: 'center',
             verticalAlign: 'middle',
             y: 25,
@@ -1052,18 +1570,18 @@
         series: [
             {
                 showInLegend: false,
-                name: 'Progress Percentage',
+                name: 'Value Percentage',
                 innerSize: '80%',
                 x: 1,
                 size: '95%',
                 data: [{
-                    name: 'Current Issue Progress',
+                    name: 'Claim Value',
                     y: 70,
                     color: " #039BE5",
                     drilldown: 'democrats-2010'
                 },
                 {
-                    name: 'Remaining Issue Progress',
+                    name: 'Contract Value',
                     y: 30,
                     color: "#e0f7fa",
 
@@ -1071,168 +1589,7 @@
             }]
     });
 </script>
-<!-- /Issue Progress Overview -->
-
-<!-- Issue Resolution-->
-<script type="text/javascript">
-    Highcharts.chart('issue-resolution', {
-        chart: {
-            plotShadow: false,
-            type: 'pie',
-        },
-        title: {
-            text: '<b style="font-size:16px; color: #333333;">Issue Resolved<br><span style="font-size:20px;">139</span></b>',
-            align: 'center',
-            verticalAlign: 'middle',
-            y: 25,
-
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.y}</b>'
-        },
-        // accessibility: {
-        //     point: {
-        //         valueSuffix: '%'
-        //     }
-        // },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: false,
-                    distance: -30,
-                    style: {
-                        fontWeight: 'bold',
-                        color: 'white'
-                    }
-                },
-                states: {
-                    hover: {
-                        halo: {
-                            size: 0
-                        }
-                    }
-                },
-                startAngle: -360,
-                endAngle: 360,
-
-            }
-        },
-        credits: {
-            enabled: false
-        },
-        series: [
-            {
-                showInLegend: false,
-                name: 'Number of Issue',
-                innerSize: '80%',
-                x: 1,
-                size: '95%',
-                data: [
-                    {
-                        name: 'Done',
-                        y: 139,
-                        color: "#36b37e",
-
-                    }, {
-                        name: 'Unsovled',
-                        y: 31,
-                        color: " #ff5630",
-
-                    },
-                ]
-            }]
-    });
-</script>
-<!-- /Issue Resolution-->
-
-<!-- Issue Priority-->
-<script type="text/javascript">
-    Highcharts.chart('issue-priority', {
-        chart: {
-            plotShadow: false,
-            type: 'pie',
-        },
-        title: {
-            text: '<b style="font-size:16px; color: #333333;">Total Issue<br><span style="font-size:20px;">170</span></b>',
-            align: 'center',
-            verticalAlign: 'middle',
-            y: 25,
-
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.y}</b>'
-        },
-        // accessibility: {
-        //     point: {
-        //         valueSuffix: '%'
-        //     }
-        // },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: false,
-                    distance: -30,
-                    style: {
-                        fontWeight: 'bold',
-                        color: 'white'
-                    }
-                },
-                states: {
-                    hover: {
-                        halo: {
-                            size: 0
-                        }
-                    }
-                },
-                startAngle: -360,
-                endAngle: 360,
-
-            }
-        },
-        credits: {
-            enabled: false
-        },
-        series: [
-            {
-                showInLegend: false,
-                name: 'Number of Issue',
-                innerSize: '80%',
-                x: 1,
-                size: '95%',
-                data: [{
-                    name: 'Low',
-                    y: 44,
-                    color: " #00b8d9",
-                    drilldown: 'democrats-2010'
-                },
-                {
-                    name: 'Highest',
-                    y: 20,
-                    color: "#ff5630",
-
-                },
-                {
-                    name: 'Medium',
-                    y: 30,
-                    color: "#0065ff",
-
-                },
-                {
-                    name: 'High',
-                    y: 36,
-                    color: "#ffab00",
-
-                },
-                {
-                    name: 'Lowest',
-                    y: 40,
-                    color: "#36b37e",
-
-                }]
-            }]
-    });
-</script>
-<!-- /Issue Priority-->
+<!-- /Contract Value & Claim Donut -->
 
 <!-- S-Curve Graph -->
 
@@ -1266,7 +1623,7 @@
 
 
 <script type="text/javascript">
-    Highcharts.chart('created-resolved-scurve', {
+    Highcharts.chart('project-progress-scurve', {
         chart: {
             type: 'spline'
         },
@@ -1301,6 +1658,383 @@
                 'Oct 22',
                 'Nov 22',
                 'Dec 22',
+
+                'Jan 23',
+                'Feb 23',
+                'Mar 23',
+                'Apr 23',
+                'May 23',
+                'Jun 23',
+                'July 23',
+                'Aug 23',
+                'Sep 23',
+                'Oct 23',
+                'Nov 23',
+                'Dec 23',
+
+                'Jan 24',
+                'Feb 24',
+                'Mar 24',
+                'Apr 24',
+                'May 24',
+                'Jun 24',
+                'July 24',
+                'Aug 24',
+                'Sep 24',
+                'Oct 24',
+                'Nov 24',
+                'Dec 24',
+
+                'Jan 25',
+                'Feb 25',
+                'Mar 25',
+                'Apr 25',
+                'May 25',
+                'Jun 25',
+                'July 25',
+                'Aug 25',
+                'Sep 25',
+                'Oct 25',
+                'Nov 25',
+                'Dec 25',
+
+                'Jan 26',
+                'Feb 26',
+                'Mar 26',
+                'Apr 26',
+                'May 26',
+                'Jun 26',
+                'July 26',
+                'Aug 26',
+                'Sep 26',
+                'Oct 26',
+                'Nov 26',
+                'Dec 26',
+
+                'Jan 27',
+                'Feb 27',
+                'Mar 27',
+                'Apr 27',
+                'May 27',
+                'Jun 27',
+                'July 27',
+                'Aug 27',
+                'Sep 27',
+                'Oct 27',
+                'Nov 27',
+                'Dec 27',
+
+                'Jan 28',
+                'Feb 28',
+            ],
+            labels: {
+                rotation: -90
+            },
+            crosshair: true
+        },
+        yAxis: {
+            labels: {
+                format: "{value}%",
+            },
+            min: 0,
+            title: {
+                text: 'Progress(%)'
+            },
+            useHTML: true
+        },
+        tooltip: {
+            valueSuffix: '%',
+            shared: true
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: false
+                },
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Early',
+            color: "#29b6f6",
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.36,
+                0.55,
+                0.76,
+                1.06,
+                1.58,
+                2.26,
+                2.93,
+                3.64,
+                4.26,
+                4.95,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.48,
+                11.12,
+                11.76,
+                12.07,
+                12.35,
+                12.75,
+                13.3,
+                13.9,
+                14.48,
+                15.96,
+                18.02,
+                20.94,
+                23.84,
+                26.5,
+                28.89,
+                31.26,
+                33.75,
+                36.54,
+                39.3,
+                42.1,
+                45,
+                47.58,
+                50.45,
+                54.26,
+                58.25,
+                61.55,
+                64.53,
+                67.52,
+                69.83,
+                72.31,
+                74.6,
+                77.33,
+                79.63,
+                81.72,
+                83.6,
+                85.29,
+                86.83,
+                88.1,
+                89.24,
+                90.25,
+                91.36,
+                92.36,
+                93.17,
+                93.94,
+                94.68,
+                95.33,
+                95.87,
+                96.39,
+                96.9,
+                97.3,
+                97.63,
+                97.9,
+                98.12,
+                98.33,
+                98.54,
+                98.75,
+                98.88,
+                98.98,
+                99.11,
+                99.31,
+                99.48,
+                99.67,
+                99.87,
+                100
+            ],
+        }, {
+            name: 'Late',
+            color: '#e53935',
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.86,
+                11.91,
+                12.04,
+                12.18,
+                12.33,
+                12.64,
+                13.44,
+                14.54,
+                16.33,
+                18.38,
+                20.75,
+                22.82,
+                24.92,
+                27.32,
+                29.92,
+                31.95,
+                34.31,
+                37,
+                40.09,
+                42.82,
+                45.9,
+                48.59,
+                51.43,
+                54.07,
+                56.79,
+                59.21,
+                61.89,
+                64.11,
+                66.55,
+                68.41,
+                70.11,
+                71.65,
+                74.01,
+                76.05,
+                77.79,
+                79.32,
+                80.92,
+                82.37,
+                83.91,
+                85.27,
+                86.71,
+                88.1,
+                89.98,
+                91.49,
+                92.76,
+                93.89,
+                94.72,
+                95.41,
+                96,
+                96.6,
+                97.05,
+                97.26,
+                97.4,
+                97.53,
+                97.73,
+                97.91,
+                98.11,
+                98.33,
+                98.62,
+                99.07,
+                100
+            ],
+        },
+        {
+            name: 'Actual',
+            color: "#64dd17",
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.88,
+                12.29,
+                12.89,
+                13.54,
+                14.34,
+                15.88,
+                20.12,
+                21.33,
+                22.55,
+                23.22,
+                24.12,
+                26.23,
+                27.72,
+                29.35,
+                29.77,
+                31.11
+            ],
+        }],
+    });
+</script>
+
+<script type="text/javascript">
+    Highcharts.chart('ev-scurve', {
+        chart: {
+            type: 'spline'
+        },
+        title: {
+            text: '',
+            useHTML: true
+        },
+        xAxis: {
+            categories: [
+                'Jan 21',
+                'Feb 21',
+                'Mar 21',
+                'Apr 21',
+                'May 21',
+                'Jun 21',
+                'July 21',
+                'Aug 21',
+                'Sep 21',
+                'Oct 21',
+                'Nov 21',
+                'Dec 21',
+
+                'Jan 22',
+                'Feb 22',
+                'Mar 22',
+                'Apr 22',
+                'May 22',
+                'Jun 22',
+                'July 22',
+                'Aug 22',
+                'Sep 22',
+                'Oct 22',
+                'Nov 22',
+                'Dec 22',
+
                 'Jan 23',
                 'Feb 23',
                 'Mar 23',
@@ -1380,13 +2114,13 @@
             },
             min: 0,
             title: {
-                text: 'Number of Issues'
+                text: 'Earned Value(RM)'
             },
             useHTML: true
         },
         tooltip: {
             pointFormat:
-                '<span style="color:{series.color}">●</span>{series.name}:<b>{point.y} </b><br>',
+                '<span style="color:{series.color}">●</span>{series.name}:<b> RM{point.y}M </b><br>',
             shared: true
         },
         plotOptions: {
@@ -1400,66 +2134,1059 @@
             enabled: false
         },
         series: [{
-            name: 'Created Issue',
+            name: 'Early',
             color: "#29b6f6",
             label: {
                 enabled: false
             },
             data: [
-                1,
-                5,
-                4,
-                7,
-                3,
-                8,
-                10,
-                12,
-                11,
-                12,
-
-                15,
-                16,
-                16,
-                20,
-                14,
-                10,
-                8,
-                7,
-                5,
-                2
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.36,
+                0.55,
+                0.76,
+                1.06,
+                1.58,
+                2.26,
+                2.93,
+                3.64,
+                4.26,
+                4.95,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.48,
+                11.12,
+                11.76,
+                12.07,
+                12.35,
+                12.75,
+                13.3,
+                13.9,
+                14.48,
+                15.96,
+                18.02,
+                20.94,
+                23.84,
+                26.5,
+                28.89,
+                31.26,
+                33.75,
+                36.54,
+                39.3,
+                42.1,
+                45,
+                47.58,
+                50.45,
+                54.26,
+                58.25,
+                61.55,
+                64.53,
+                67.52,
+                69.83,
+                72.31,
+                74.6,
+                77.33,
+                79.63,
+                81.72,
+                83.6,
+                85.29,
+                86.83,
+                88.1,
+                89.24,
+                90.25,
+                91.36,
+                92.36,
+                93.17,
+                93.94,
+                94.68,
+                95.33,
+                95.87,
+                96.39,
+                96.9,
+                97.3,
+                97.63,
+                97.9,
+                98.12,
+                98.33,
+                98.54,
+                98.75,
+                98.88,
+                98.98,
+                99.11,
+                99.31,
+                99.48,
+                99.67,
+                99.87,
+                100
             ],
         }, {
-            name: 'Resolved Issue',
+            name: 'Late',
             color: '#e53935',
             label: {
                 enabled: false
             },
             data: [
-                1,
-                4,
-                3,
-                4,
-                3,
-                7,
-                7,
-                8,
-                9,
-                10,
-
-                11,
-                14,
-                14,
-                16,
-                13,
-                8,
-                6,
-                7,
-                5,
-                2
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.86,
+                11.91,
+                12.04,
+                12.18,
+                12.33,
+                12.64,
+                13.44,
+                14.54,
+                16.33,
+                18.38,
+                20.75,
+                22.82,
+                24.92,
+                27.32,
+                29.92,
+                31.95,
+                34.31,
+                37,
+                40.09,
+                42.82,
+                45.9,
+                48.59,
+                51.43,
+                54.07,
+                56.79,
+                59.21,
+                61.89,
+                64.11,
+                66.55,
+                68.41,
+                70.11,
+                71.65,
+                74.01,
+                76.05,
+                77.79,
+                79.32,
+                80.92,
+                82.37,
+                83.91,
+                85.27,
+                86.71,
+                88.1,
+                89.98,
+                91.49,
+                92.76,
+                93.89,
+                94.72,
+                95.41,
+                96,
+                96.6,
+                97.05,
+                97.26,
+                97.4,
+                97.53,
+                97.73,
+                97.91,
+                98.11,
+                98.33,
+                98.62,
+                99.07,
+                100
             ],
         },
+        {
+            name: 'Actual',
+            color: "#64dd17",
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.88,
+                12.29,
+                12.89,
+                13.54,
+                14.34,
+                15.88,
+                20.12,
+                21.33,
+                22.55,
+                23.22,
+                24.12,
+                26.23,
+                27.72,
+                29.35,
+                29.77,
+                31.11
+            ],
+        }],
+    });
+</script>
+
+
+
+<!-- /S-Curve Graph -->
+
+<!-- Project Milestones -->
+
+<!-- <style type="text/css">
+	#project-overview-graph {
+		height: 500px;
+	}
+
+	.highchart-title {
+		font-weight: 500;
+
+	}
+
+	.highcharts-drilldown-data-label text {
+		text-decoration: none !important;
+	}
+</style> -->
+
+
+<script type="text/javascript">
+    var today = new Date(),
+        day = 1000 * 60 * 60 * 24,
+        // Utility functions
+        dateFormat = Highcharts.dateFormat,
+        defined = Highcharts.defined,
+        isObject = Highcharts.isObject;
+
+    // Set to 00:00:00:000 today
+    today.setUTCHours(0);
+    today.setUTCMinutes(0);
+    today.setUTCSeconds(0);
+    today.setUTCMilliseconds(0);
+    today = today.getTime();
+
+    Highcharts.ganttChart('project-10-milestones', {
+        series: [{
+            name: 'NPIS Requirement Study',
+            data: [{
+                name: 'NPIS Requirement Study',
+                id: 'new_offices',
+                owner: 'Peter',
+                color: "#555"
+            },
+            {
+                useHTML: true,
+                name: 'Document Centric Review',
+                id: 'prepare_building',
+                parent: 'new_offices',
+                start: today - (2 * day),
+                end: today + (6 * day),
+                color: "#29b6f6",
+                completed: {
+                    amount: 0.2,
+                    fill: '#039BE5'
+                },
+                owner: 'James Mcwell'
+            }, {
+                name: 'Stakeholders Investigation',
+                id: 'inspect_building',
+                dependency: 'prepare_building',
+                parent: 'new_offices',
+                start: today - (2 * day),
+                end: today + (6 * day),
+                owner: 'Ahmad Saidul',
+                color: "#e53935"
+            }, {
+                name: 'Legacy System Walkthrough',
+                id: 'Legacy System Walkthrough',
+                dependency: 'inspect_building',
+                parent: 'new_offices',
+                start: today + 5.5 * day,
+                end: today + (10 * day),
+                color: "#29b6f6",
+                owner: 'Hadi Jamaludin'
+            }, {
+                name: 'System Requirement Specification',
+                id: 'relocate',
+                dependency: 'passed_inspection',
+                parent: 'new_offices',
+                owner: 'Joseph Chong',
+                color: "#888"
+            }, {
+                name: 'User Stories',
+                id: 'relocate_staff',
+                parent: 'relocate',
+                start: today + 10 * day,
+                end: today + 11 * day,
+                owner: 'Kevin Wong',
+                color: "#29b6f6"
+            }, {
+                name: 'System Context Diagram',
+                dependency: 'relocate_staff',
+                parent: 'relocate',
+                start: today + 11 * day,
+                end: today + 13 * day,
+                owner: 'Liam Weng',
+                color: "#29b6f6"
+            }, {
+                name: 'Data Flow Diagram',
+                dependency: 'relocate_staff',
+                parent: 'relocate',
+                start: today + 11 * day,
+                end: today + 14 * day,
+                color: "#29b6f6"
+            }]
+        }, {
+            name: 'ICU (SPPII)',
+            data: [{
+                name: 'ICU (SPPII)',
+                id: 'new_product',
+                owner: 'Peter Kelvin',
+                color: "#555",
+            }, {
+                name: 'Document Centric Review',
+                id: 'development',
+                parent: 'new_product',
+                start: today - day,
+                end: today + (11 * day),
+                color: "#29b6f6",
+                completed: {
+                    amount: 0.6,
+                    fill: '#039BE5'
+                },
+                owner: 'Judith John'
+            }, {
+                name: 'Stakeholder Investigation',
+                id: 'beta',
+                dependency: 'development',
+                parent: 'new_product',
+                start: today + 12.5 * day,
+                end: today + 11 * day,
+                owner: 'Faizul Fatin',
+                color: "#29b6f6"
+            }, {
+                name: 'Legacy System Walkthrough',
+                id: 'finalize',
+                dependency: 'beta',
+                parent: 'new_product',
+                start: today + 13 * day,
+                end: today + 17 * day,
+                color: "#29b6f6"
+            }, {
+                name: 'User Interview',
+                dependency: 'finalize',
+                parent: 'new_product',
+                start: today + 16.5 * day,
+                end: today + 20 * day,
+                owner: 'Ismail Khalid',
+                color: "#29b6f6"
+            }]
+        }],
+        tooltip: {
+            pointFormatter: function () {
+                var point = this,
+                    format = '%e. %b',
+                    options = point.options,
+                    completed = options.completed,
+                    amount = isObject(completed) ? completed.amount : completed,
+                    status = ((amount || 0) * 100) + '%',
+                    lines;
+
+                lines = [{
+                    value: point.name,
+                    style: 'font-weight: bold;'
+                }, {
+                    title: 'Start',
+                    value: dateFormat(format, point.start)
+                }, {
+                    visible: !options.milestone,
+                    title: 'End',
+                    value: dateFormat(format, point.end)
+                }, {
+                    title: 'Completed',
+                    value: status
+                }, {
+                    title: 'Owner',
+                    value: options.owner || 'unassigned'
+                }];
+
+                return lines.reduce(function (str, line) {
+                    var s = '',
+                        style = (
+                            defined(line.style) ? line.style : 'font-size: 0.8em;'
+                        );
+                    if (line.visible !== false) {
+                        s = (
+                            '<span style="' + style + '">' +
+                            (defined(line.title) ? line.title + ': ' : '') +
+                            (defined(line.value) ? line.value : '') +
+                            '</span><br/>'
+                        );
+                    }
+                    return str + s;
+                }, '');
+            }
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            currentDateIndicator: true,
+            min: today - 3 * day,
+            max: today + 18 * day
+        },
+        credits: {
+            enabled: false
+        },
+    });
+
+</script>
+
+<!-- /Project Milestones -->
+
+
+<!-- Risk 1  -->
+<script type="text/javascript">
+    Highcharts.chart('chart01', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#fdd835',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [11, 12, 13, 12, 11, 10, 11, 12, 11, 11, 10, 12]
+        }]
+    });
+</script>
+<!-- /Risk 1  -->
+
+<!-- Risk 2  -->
+<script type="text/javascript">
+    Highcharts.chart('chart02', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#e0e0e0',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [16]
+        }]
+    });
+</script>
+<!-- /Risk 2  -->
+
+<!-- Risk 2a  -->
+<script type="text/javascript">
+    Highcharts.chart('chart02a', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#e0e0e0',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [16]
+        }]
+    });
+</script>
+<!-- /Risk 2  -->
+
+<!-- Risk 3  -->
+<script type="text/javascript">
+    Highcharts.chart('chart03', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#64dd17',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [6, 5, 5, 7, 6, 7, 4, 5, 5, 6, 7, 7]
+        }]
+    });
+</script>
+<!-- /Risk 3  -->
+
+<!-- Risk 3c  -->
+<script type="text/javascript">
+    Highcharts.chart('chart03c', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#64dd17',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [6, 5, 5, 7, 6, 7, 4, 5, 5, 6, 7, 7]
+        }]
+    });
+</script>
+<!-- /Risk 3c  -->
+
+<!-- Risk 4  -->
+<script type="text/javascript">
+    Highcharts.chart('chart04', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#fdd835',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [10, 12, 14, {
+                y: 21,
+                color: '#FDA50f'
+            }, {
+                    y: 19,
+                    color: '#FDA50f'
+                }, {
+                    y: 18,
+                    color: '#FDA50f'
+                }, {
+                    y: 20,
+                    color: '#FDA50f'
+                }, {
+                    y: 20,
+                    color: '#FDA50f'
+                }, {
+                    y: 22,
+                    color: '#BF0B23'
+                }, {
+                    y: 24,
+                    color: '#BF0B23'
+                }, {
+                    y: 25,
+                    color: '#BF0B23'
+                },]
+        }]
+    });
+</script>
+<!-- /Risk 4  -->
+
+<!-- Risk 5  -->
+<script type="text/javascript">
+    Highcharts.chart('chart05', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: '',
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        yAxis: {
+            lineWidth: 0,
+            tickWidth: 0,
+            title: null,
+            min: 0,
+            labels: {
+                enabled: false
+            },
+            gridLineWidth: 0,
+        },
+        legend: {
+            align: 'center',
+            verticalAlign: 'top'
+
+        },
+        credits: {
+            enabled: false,
+        },
+        plotOptions: {
+            line: {
+
+                lineColor: '#29b6f6',
+                lineWidth: 2,
+
+            }
+        },
+        series: [{
+            color: '#fdd835',
+            name: 'Risk Indicator',
+            showInLegend: false,
+            data: [10, 12, 14, {
+                y: 21,
+                color: '#FDA50f'
+            }, {
+                    y: 19,
+                    color: '#FDA50f'
+                }, {
+                    y: 18,
+                    color: '#FDA50f'
+                }, {
+                    y: 17,
+                    color: '#FDA50f'
+                }, {
+                    y: 15,
+                    color: '#FDA50f'
+                }, {
+                    y: 15,
+                    color: '#fdd835'
+                }, {
+                    y: 11,
+                    color: '#fdd835'
+                }, {
+                    y: 9,
+                    color: '#64dd17'
+                },]
+        }]
+    });
+</script>
+<!-- /Risk 5  -->
+
+<!-- Contract Value & Claim Donut -->
+<script type="text/javascript">
+    Highcharts.chart('project-issue-donut', {
+        chart: {
+            type: 'column',
+            marginTop: 100
+        },
+
+        title: {
+            text: ''
+        },
+
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Risk'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
+        },
+        credits: {
+            enabled: false
+        },
+        series: [
+            {
+                name: "Risk Type",
+                colorByPoint: true,
+                data: [
+                    {
+                        name: "Low",
+                        y: 3,
+                        color: "#64dd17",
+
+                    },
+                    {
+                        name: "Medium",
+                        y: 2,
+                        color: "#FDA50f",
+
+                    },
+                    {
+                        name: "High",
+                        y: 5,
+                        color: "#e53935",
+
+                    },
+
+                ]
+            }
         ],
     });
 </script>
+<!-- /Contract Value & Claim Donut -->
+
+<!-- Risk High Medium Low-->
+<script>
+    // Create the chart
+    Highcharts.chart('project-current-status', {
+        chart: {
+            type: 'column'
+        },
+
+        title: {
+            text: ''
+        },
+
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Risk'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
+        },
+        credits: {
+            enabled: false
+        },
+        series: [
+            {
+                name: "Risk Current Status",
+                colorByPoint: true,
+                data: [
+                    {
+                        name: "New Risk",
+                        y: 2,
+                        color: "#e0e0e0",
+
+                    },
+                    {
+                        name: "Maintain",
+                        y: 2,
+                        color: "#FDA50f",
+
+                    },
+
+                    {
+                        name: "Deterioted",
+                        y: 1,
+                        color: "#e53935",
+
+                    },
+                    {
+                        name: "Improved",
+                        y: 1,
+                        color: "#55f31a",
+
+                    },
+
+
+                ]
+            }
+        ],
+    });
+</script>
+<!-- /Risk High Medium Low -->
 
 </html>
