@@ -529,7 +529,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="card">
+                                    <div class="card" style="height: 620px;">
                                         <div class="card-header bg-dark text-white header-elements-inline">
                                             <h6 class="card-title font-weight-semibold">Project Overview</h6>
                                             <!-- <div class="header-elements">
@@ -607,7 +607,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="card">
+                                    <div class="card" style="height: 620px;">
                                         <div class="card-header bg-dark text-white header-elements-inline">
                                             <h6 class="card-title font-weight-semibold">Programme Overview</h6>
                                             <!-- <div class="header-elements">
@@ -702,89 +702,56 @@
 
                                     </div>
                                 </div>
-                                <!-- <div class="col-md-12">
+
+                                <div class="col-xl-12">
                                     <div class="card">
                                         <div class="card-header bg-dark text-white header-elements-inline">
-                                            <h6 class="card-title font-weight-semibold">Service Overview</h6>
-                                            <div class="header-elements">
-                                                <div class="list-icons">
-                                                    <div class="dropdown">
-                                                        <a href="#" class="list-icons-item dropdown-toggle light"
-                                                            data-toggle="dropdown"><i class="icon-menu7"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-md-right">
-                                                            <a href="#" class="dropdown-item">Download PNG Image</a>
-                                                            <a href="#" class="dropdown-item">Download JPEG
-                                                                Image</a>
+                                            <h6 class="card-title font-weight-semibold">Programme Progress
+                                                S-Curve
+                                            </h6>
 
-                                                            <a href="#" class="dropdown-item">Download SVG Vector
-                                                                Image</a>
-                                                            <hr>
-                                                            <a href="#" class="dropdown-item">Download PDF
-                                                                Document</a>
-                                                            <a href="#" class="dropdown-item">Download CSV</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                         <div class="card-body">
-
                                             <div class="highcharts-figure">
-                                                <div id="service-tower-graph"></div>
+                                                <div id="project-progress-scurve"></div>
                                             </div>
-                                            <div>
-                                                <div class="col-xl-12">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered font-weight-semibold">
-                                                            <tbody>
-                                                                <tr class="text-center font-size-sm">
 
-                                                                    <td style="background-color: #0278ae; color:white;">
-                                                                        In
-                                                                        Progress</td>
-                                                                    <td>1
-                                                                        Project(s)</td>
-                                                                    <td style="background-color: #ff3d00; color:white;">
-                                                                        Delayed
-                                                                    </td>
-                                                                    <td>2
-                                                                        Project(s)</td>
-                                                                    <td style="background-color: #309130; color:white;">
-                                                                        Completed
-                                                                    </td>
-                                                                    <td>1
-                                                                        Project(s)</td>
-                                                                </tr>
-                                                                <tr class="text-center font-size-sm">
+                                            <div class="col-xl-12">
 
-                                                                    <td style="background-color: #51adcf;color:white;">
-                                                                        Total
-                                                                        Value</td>
-                                                                    <td>R500M
-                                                                    </td>
-                                                                    <td style="background-color: #e64a19; color:white;">
-                                                                        Total
-                                                                        Value</td>
-                                                                    <td>RM1,280M
-                                                                    </td>
-                                                                    <td style="background-color: #8cba51;color:white;">
-                                                                        Total
-                                                                        Value</td>
-                                                                    <td>RM230M
-                                                                    </td>
-
-
-
-
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                <div class="table-responsive">
+                                                    <table
+                                                        class="table table-bordered font-weight-semibold font-size-lg">
+                                                        <thead class="text-center">
+                                                            <th class="bg-custom-blue">Early</th>
+                                                            <th class="bg-custom-red">Late</th>
+                                                            <th class="bg-custom-green">Actual</th>
+                                                            <th class="bg-custom-deep-blue">Growth Rate
+                                                            </th>
+                                                            <th class="bg-custom-deep-blue">Var Early</th>
+                                                            <th class="bg-custom-deep-blue">Var Late</th>
+                                                            <th class="bg-custom-deep-blue">Trend</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="table-border-top text-center">
+                                                                <td>39.3%</td>
+                                                                <td>31.95%</td>
+                                                                <td>31.11%</td>
+                                                                <td>1.63</td>
+                                                                <td>-16.12%</td>
+                                                                <td>-7.21%</td>
+                                                                <td><i class="icon-arrow-down12 text-danger"
+                                                                        style="font-size: 1.5rem;"></i></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
+
+
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+
                                 <div class="col-md-3">
                                     <div class="card">
                                         <div class="card-header bg-dark text-white header-elements-inline">
@@ -2319,5 +2286,381 @@
     });
 </script>
 <!-- /IV & V Overvieww -->
+
+<script type="text/javascript">
+    Highcharts.chart('project-progress-scurve', {
+        chart: {
+            type: 'spline'
+        },
+        title: {
+            text: '',
+            useHTML: true
+        },
+        xAxis: {
+            categories: [
+                'Jan 21',
+                'Feb 21',
+                'Mar 21',
+                'Apr 21',
+                'May 21',
+                'Jun 21',
+                'July 21',
+                'Aug 21',
+                'Sep 21',
+                'Oct 21',
+                'Nov 21',
+                'Dec 21',
+
+                'Jan 22',
+                'Feb 22',
+                'Mar 22',
+                'Apr 22',
+                'May 22',
+                'Jun 22',
+                'July 22',
+                'Aug 22',
+                'Sep 22',
+                'Oct 22',
+                'Nov 22',
+                'Dec 22',
+
+                'Jan 23',
+                'Feb 23',
+                'Mar 23',
+                'Apr 23',
+                'May 23',
+                'Jun 23',
+                'July 23',
+                'Aug 23',
+                'Sep 23',
+                'Oct 23',
+                'Nov 23',
+                'Dec 23',
+
+                'Jan 24',
+                'Feb 24',
+                'Mar 24',
+                'Apr 24',
+                'May 24',
+                'Jun 24',
+                'July 24',
+                'Aug 24',
+                'Sep 24',
+                'Oct 24',
+                'Nov 24',
+                'Dec 24',
+
+                'Jan 25',
+                'Feb 25',
+                'Mar 25',
+                'Apr 25',
+                'May 25',
+                'Jun 25',
+                'July 25',
+                'Aug 25',
+                'Sep 25',
+                'Oct 25',
+                'Nov 25',
+                'Dec 25',
+
+                'Jan 26',
+                'Feb 26',
+                'Mar 26',
+                'Apr 26',
+                'May 26',
+                'Jun 26',
+                'July 26',
+                'Aug 26',
+                'Sep 26',
+                'Oct 26',
+                'Nov 26',
+                'Dec 26',
+
+                'Jan 27',
+                'Feb 27',
+                'Mar 27',
+                'Apr 27',
+                'May 27',
+                'Jun 27',
+                'July 27',
+                'Aug 27',
+                'Sep 27',
+                'Oct 27',
+                'Nov 27',
+                'Dec 27',
+
+                'Jan 28',
+                'Feb 28',
+            ],
+            labels: {
+                rotation: -90
+            },
+            crosshair: true
+        },
+        yAxis: {
+            labels: {
+                format: "{value}%",
+            },
+            min: 0,
+            title: {
+                text: 'Progress(%)'
+            },
+            useHTML: true
+        },
+        tooltip: {
+            valueSuffix: '%',
+            shared: true
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: false
+                },
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Early',
+            color: "#29b6f6",
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.36,
+                0.55,
+                0.76,
+                1.06,
+                1.58,
+                2.26,
+                2.93,
+                3.64,
+                4.26,
+                4.95,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.48,
+                11.12,
+                11.76,
+                12.07,
+                12.35,
+                12.75,
+                13.3,
+                13.9,
+                14.48,
+                15.96,
+                18.02,
+                20.94,
+                23.84,
+                26.5,
+                28.89,
+                31.26,
+                33.75,
+                36.54,
+                39.3,
+                42.1,
+                45,
+                47.58,
+                50.45,
+                54.26,
+                58.25,
+                61.55,
+                64.53,
+                67.52,
+                69.83,
+                72.31,
+                74.6,
+                77.33,
+                79.63,
+                81.72,
+                83.6,
+                85.29,
+                86.83,
+                88.1,
+                89.24,
+                90.25,
+                91.36,
+                92.36,
+                93.17,
+                93.94,
+                94.68,
+                95.33,
+                95.87,
+                96.39,
+                96.9,
+                97.3,
+                97.63,
+                97.9,
+                98.12,
+                98.33,
+                98.54,
+                98.75,
+                98.88,
+                98.98,
+                99.11,
+                99.31,
+                99.48,
+                99.67,
+                99.87,
+                100
+            ],
+        }, {
+            name: 'Late',
+            color: '#e53935',
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.86,
+                11.91,
+                12.04,
+                12.18,
+                12.33,
+                12.64,
+                13.44,
+                14.54,
+                16.33,
+                18.38,
+                20.75,
+                22.82,
+                24.92,
+                27.32,
+                29.92,
+                31.95,
+                34.31,
+                37,
+                40.09,
+                42.82,
+                45.9,
+                48.59,
+                51.43,
+                54.07,
+                56.79,
+                59.21,
+                61.89,
+                64.11,
+                66.55,
+                68.41,
+                70.11,
+                71.65,
+                74.01,
+                76.05,
+                77.79,
+                79.32,
+                80.92,
+                82.37,
+                83.91,
+                85.27,
+                86.71,
+                88.1,
+                89.98,
+                91.49,
+                92.76,
+                93.89,
+                94.72,
+                95.41,
+                96,
+                96.6,
+                97.05,
+                97.26,
+                97.4,
+                97.53,
+                97.73,
+                97.91,
+                98.11,
+                98.33,
+                98.62,
+                99.07,
+                100
+            ],
+        },
+        {
+            name: 'Actual',
+            color: "#64dd17",
+            label: {
+                enabled: false
+            },
+            data: [
+                0,
+                0.01,
+                0.02,
+                0.1,
+                0.22,
+                0.35,
+                0.53,
+                0.74,
+                1.04,
+                1.57,
+                2.25,
+                2.92,
+                3.63,
+                4.25,
+                4.94,
+                5.74,
+                6.47,
+                7.17,
+                7.92,
+                8.63,
+                9.19,
+                9.85,
+                10.49,
+                11.13,
+                11.84,
+                11.88,
+                12.29,
+                12.89,
+                13.54,
+                14.34,
+                15.88,
+                20.12,
+                21.33,
+                22.55,
+                23.22,
+                24.12,
+                26.23,
+                27.72,
+                29.35,
+                29.77,
+                31.11
+            ],
+        }],
+    });
+</script>
 
 </html>

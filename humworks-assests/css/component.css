@@ -14912,7 +14912,7 @@ a.fc-more:hover {
 
 .dataTables_info {
 	float: left;
-	padding: 0.4375rem 0;
+	padding: 0.4375rem 1.25rem;
 	margin-bottom: 1.25rem;
 }
 
