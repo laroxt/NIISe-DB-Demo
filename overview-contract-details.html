@@ -662,8 +662,8 @@
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr class="table-border-top text-center">
-                                                                            <td>RM500K</td>
-                                                                            <td>RM1.2M</td>
+                                                                            <td>RM850K</td>
+                                                                            <td>RM2.2M</td>
 
                                                                         </tr>
                                                                     </tbody>
@@ -689,7 +689,7 @@
 
                                                     <div class="card-body">
                                                         <div class="highcharts-figure">
-                                                            <div id="project-change-request"></div>
+                                                            <div id="cp-contract"></div>
                                                         </div>
                                                         <div class="table-responsive">
 
@@ -705,8 +705,9 @@
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr class="table-border-top text-center">
-                                                                            <td>93%</td>
-                                                                            <td>7%</td>
+                                                                            <td>RM850K</td>
+                                                                            <td>RM1.2M</td>
+
 
                                                                         </tr>
                                                                     </tbody>
@@ -731,7 +732,7 @@
 
                                                     <div class="card-body">
                                                         <div class="highcharts-figure">
-                                                            <div id="project-change-request"></div>
+                                                            <div id="penalty"></div>
                                                         </div>
                                                         <div class="table-responsive ">
 
@@ -740,16 +741,15 @@
                                                                     class="table table-bordered font-weight-semibold font-size-lg">
                                                                     <thead class="text-center">
                                                                         <th class="current-progress"
-                                                                            style="width: 50%;">Current
-                                                                            Progress</th>
+                                                                            style="width: 50%;">Penalty</th>
                                                                         <th class="remain-progress" style="width: 50%;">
-                                                                            Remaining Progress</th>
+                                                                            Contract Cost</th>
 
                                                                     </thead>
                                                                     <tbody>
                                                                         <tr class="table-border-top text-center">
-                                                                            <td>93%</td>
-                                                                            <td>7%</td>
+                                                                            <td>RM100K</td>
+                                                                            <td>RM2.2M</td>
 
                                                                         </tr>
                                                                     </tbody>
@@ -1369,7 +1369,7 @@
 </script>
 <!-- /Progress Donut -->
 
-<!-- Change Request -->
+<!-- Cost Paymenet Project -->
 <script>
     // Create the chart
     Highcharts.chart('cp-project', {
@@ -1378,7 +1378,7 @@
             type: 'pie',
         },
         title: {
-            text: '<b style="font-size:16px;">Project Progress<br><span style="font-size:20px;">42%</span></b>',
+            text: '<b style="font-size:16px;">Remaining Payment<br><span style="font-size:20px;">RM2.2M</span></b>',
             align: 'center',
             verticalAlign: 'middle',
             y: 25,
@@ -1427,7 +1427,155 @@
             data: [
                 {
                     name: 'Payment Cost',
-                    y: 500000,
+                    y: 850000,
+                    color: " #039BE5",
+
+                }, {
+                    name: 'Contract Cost',
+                    y: 2200000,
+                    color: " #e0f4fa ",
+
+                }]
+        },
+        ]
+    });
+
+</script>
+<!-- /Cost Paymenet Projectt -->
+
+<!-- Penalty Project -->
+<script>
+    // Create the chart
+    Highcharts.chart('penalty', {
+        chart: {
+            plotShadow: false,
+            type: 'pie',
+        },
+        title: {
+            text: '<b style="font-size:16px;">Remaining Payment<br><span style="font-size:20px;">RM2.2M</span></b>',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 25,
+
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>RM{point.y}</b>'
+        },
+        // accessibility: {
+        //     point: {
+        //         valueSuffix: '%'
+        //     }
+        // },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false,
+                    distance: -30,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                },
+                states: {
+                    hover: {
+                        halo: {
+                            size: 0
+                        }
+                    }
+                },
+                startAngle: -360,
+                endAngle: 360,
+
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Received Cost',
+            innerSize: '80%',
+            color: 'blue',
+            x: 0,
+            size: '85%',
+            data: [
+                {
+                    name: 'Penalty',
+                    y: 100000,
+                    color: " #039BE5",
+
+                }, {
+                    name: 'Contract Cost',
+                    y: 2200000,
+                    color: " #e0f4fa ",
+
+                }]
+        },
+        ]
+    });
+
+</script>
+<!-- /Penalty Projectt -->
+
+<!-- Cost Paymenet Project -->
+<script>
+    // Create the chart
+    Highcharts.chart('cp-contract', {
+        chart: {
+            plotShadow: false,
+            type: 'pie',
+        },
+        title: {
+            text: '<b style="font-size:16px;">Remaining Payment<br><span style="font-size:20px;">RM1.2M</span></b>',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 25,
+
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>RM{point.y}</b>'
+        },
+        // accessibility: {
+        //     point: {
+        //         valueSuffix: '%'
+        //     }
+        // },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: false,
+                    distance: -30,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                },
+                states: {
+                    hover: {
+                        halo: {
+                            size: 0
+                        }
+                    }
+                },
+                startAngle: -360,
+                endAngle: 360,
+
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            showInLegend: false,
+            name: 'Received Cost',
+            innerSize: '80%',
+            color: 'blue',
+            x: 0,
+            size: '85%',
+            data: [
+                {
+                    name: 'Payment Cost',
+                    y: 850000,
                     color: " #039BE5",
 
                 }, {
@@ -1441,7 +1589,7 @@
     });
 
 </script>
-<!-- /Change Request -->
+<!-- /Cost Paymenet Projectt -->
 
 <!-- Risk High Medium Low-->
 <script>
