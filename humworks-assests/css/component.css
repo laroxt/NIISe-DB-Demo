@@ -19348,6 +19348,11 @@ a.fc-more:hover {
 	background-color: #FDA50f;
 }
 
+.badge-red {
+	color: white;
+	background-color: #e53935;
+}
+
 .remain-progress {
 	background-color: #e0f7fa;
 }
