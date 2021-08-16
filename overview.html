@@ -566,22 +566,22 @@
 
                                                                     <td style="background-color: #b3e5fc; width: 10%;">
                                                                         Application</td>
-                                                                    <td style="width: 10%;">RM150M</td>
+                                                                    <td style="width: 10%;">RM3.1M</td>
                                                                     <td style="background-color: #81d4fa
                                                                     ; ; width: 10%;">
                                                                         Infrastructure
                                                                     </td>
-                                                                    <td style="width: 10%;">RM50M</td>
+                                                                    <td style="width: 10%;">RM1.1M</td>
                                                                     <td style="background-color: #4fc3f7
                                                                     ; color:white; width: 10%;">
                                                                         Technical
                                                                     </td>
-                                                                    <td style="width: 10%;">RM452M</td>
+                                                                    <td style="width: 10%;">RM1.73M</td>
                                                                     <td style="background-color: #29b6f6
                                                                     ; color:white; width: 10%;">
                                                                         Application<br>(Service)
                                                                     </td>
-                                                                    <td style="width: 10%;">RM150M</td>
+                                                                    <td style="width: 10%;">RM2.7M</td>
                                                                     <td
                                                                         style="background-color: #01579b; width: 10%; color:white;">
                                                                         Current<br> Progress
@@ -593,22 +593,22 @@
                                                                     <td style="background-color: #03a9f4
                                                                     ;color:white; width: 10%;">
                                                                         Management</td>
-                                                                    <td style="width: 10%;">RM230M
+                                                                    <td style="width: 10%;">RM1M
                                                                     </td>
                                                                     <td
                                                                         style="background-color: #039be5; color:white; width: 10%;">
                                                                         Business</td>
-                                                                    <td style="width: 10%;">RM200M
+                                                                    <td style="width: 10%;">RM1.1M
                                                                     </td>
                                                                     <td
                                                                         style="background-color: #0288d1; color:white; width: 10%;">
                                                                         IV&V</td>
-                                                                    <td style="width: 10%;">RM80M
+                                                                    <td style="width: 10%;">RM2M
                                                                     </td>
                                                                     <td
                                                                         style="background-color: #0277bd; color:white; width: 10%;">
                                                                         Project<br> Management</td>
-                                                                    <td style="width: 10%;">RM180M
+                                                                    <td style="width: 10%;">RM1.1M
                                                                     </td>
                                                                     <td style="background-color: #e0f7fa; width: 10%;">
                                                                         Remaing<br> Progress</td>
@@ -681,17 +681,17 @@
                                                                     <td style="background-color: #fccf14; color:white;">
                                                                         Total
                                                                         Value</td>
-                                                                    <td>RM1,550M
+                                                                    <td>RM5.2M
                                                                     </td>
                                                                     <td style="background-color: #ef5350; color:white;">
                                                                         Total
                                                                         Value</td>
-                                                                    <td>RM2,180M
+                                                                    <td>RM6.63M
                                                                     </td>
                                                                     <td style="background-color: #b2ff59;">
                                                                         Total
                                                                         Value</td>
-                                                                    <td>RM400M
+                                                                    <td>RM2M
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -1435,6 +1435,7 @@
                 yAxis: 1,
                 tooltip: {
                     useHTML: true,
+                    valueDecimals: 2,
                     valuePrefix: 'RM',
                     valueSuffix: 'M',
                     shared: true,
@@ -1449,19 +1450,19 @@
                 data: [
                     {
                         name: 'On-Schedule',
-                        y: 1550,
+                        y: 5.2,
                         color: "#fccf14",
                         // drilldown: 'democrats-2014',
                         key: '#'
                     }, {
                         name: 'Completed',
-                        y: 400,
+                        y: 2,
                         color: "#b2ff59",
                         key: '#'
                     },
                     {
                         name: 'Delayed',
-                        y: 2180,
+                        y: 6.63,
                         color: "#ef5350",
                         key: '#'
                     }]
@@ -1740,63 +1741,63 @@
             size: '85%',
 
             tooltip: {
-                valueDecimals: 0,
-                pointFormat: '{series.name}: <b>RM{point.y}M</b>'
+                valueDecimals: 2,
+                pointFormat: '{series.name}: <b>RM{point.y:.1f}M</b>'
             },
 
             data: [
                 {
                     name: 'Application',
-                    y: 150,
+                    y: 3.1,
                     color: "#b3e5fc",
 
 
                 },
                 {
                     name: 'Infrastructure',
-                    y: 50,
+                    y: 1.1,
                     color: " #81d4fa",
 
 
                 },
                 {
                     name: 'Technical',
-                    y: 452,
+                    y: 1.73,
                     color: " #4fc3f7",
 
 
                 },
                 {
                     name: 'Application(Service)',
-                    y: 150,
+                    y: 2.7,
                     color: " #29b6f6",
 
 
                 },
                 {
                     name: 'Management',
-                    y: 230,
+                    y: 1,
                     color: " #03a9f4",
 
 
                 },
                 {
                     name: 'Business',
-                    y: 200,
+                    y: 1.1,
                     color: " #039be5",
 
 
                 },
                 {
                     name: 'IV&V',
-                    y: 80,
+                    y: 2,
                     color: "#0288d1",
 
 
                 },
                 {
                     name: 'Project Management',
-                    y: 180,
+                    y: 1.1,
                     color: "#0277bd",
 
 
